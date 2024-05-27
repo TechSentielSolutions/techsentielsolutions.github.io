@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="seg.php">
+    <title>Empresa de Pentesting</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #282828;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #00d1b2;
+            animation: neon 1.5s infinite alternate;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff6f61;
+        }
+        section {
+            padding: 100px 25px 20px;
+            transition: transform 0.5s, opacity 0.5s;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #00d1b2;
+            text-align: center;
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-out;
+        }
+        .card {
+            background-color: #333;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .card img:hover {
+            transform: scale(1.05);
+        }
+        .card h3 {
+            margin-top: 10px;
+        }
+        footer {
+            background-color: #282828;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+            color: #00d1b2;
+        }
+        @keyframes neon {
+            from {
+                text-shadow: 0 0 10px #00d1b2, 0 0 20px #00d1b2, 0 0 30px #00d1b2, 0 0 40px #00d1b2;
+            }
+            to {
+                text-shadow: 0 0 20px #00d1b2, 0 0 30px #00d1b2, 0 0 40px #00d1b2, 0 0 50px #00d1b2;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+        .animated-button {
+            background-color: #00d1b2;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .animated-button:hover {
+            background-color: #ff6f61;
+            animation: bounce 1s;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Empresa de Pentesting</h1>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#videos">Videos</a>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section id="inicio" class="container">
+    <h2>Bienvenidos a Nuestra Empresa de Pentesting</h2>
+    <p>Somos una empresa dedicada a ofrecer servicios de pentesting de alta calidad, asegurando que las infraestructuras de nuestros clientes estén siempre protegidas contra amenazas potenciales.</p>
+    <button class="animated-button">Conócenos Más</button>
+</section>
+
+<section id="noticias" class="container">
+    <h2>Noticias y Datos Curiosos</h2>
+    <div class="card">
+        <h3>Últimas Noticias en Ciberseguridad</h3>
+        <p>Mantente informado con las noticias más recientes y relevantes en el mundo de la ciberseguridad.</p>
+    </div>
+    <div class="card">
+        <h3>Curiosidades</h3>
+        <p>Descubre datos interesantes sobre ciberseguridad y tecnología.</p>
+    </div>
+</section>
+
+<section id="videos" class="container">
+    <h2>Galería de Videos e Imágenes</h2>
+    <div class="card">
+        <img src="https://via.placeholder.com/800x400" alt="Video">
+        <h3>Video Destacado</h3>
+        <p>Explora nuestro contenido multimedia para conocer más sobre nuestros servicios y casos de éxito.</p>
+    </div>
+</section>
+
+<section id="sobre-nosotros" class="container">
+    <h2>Sobre Nosotros</h2>
+    <div class="card">
+        <h3>Nuestra Misión</h3>
+        <p>Proteger a nuestros clientes contra amenazas cibernéticas mediante servicios de pentesting de clase mundial.</p>
+    </div>
+    <div class="card">
+        <h3>Nuestro Equipo</h3>
+        <p>Conoce a los expertos que forman parte de nuestra empresa y su compromiso con la seguridad cibernética.</p>
+    </div>
+</section>
+
+<section id="contacto" class="container">
+    <h2>Contacto</h2>
+    <div class="card">
+        <h3>Contáctanos</h3>
+        <p>Para consultas y más información, por favor rellena el formulario de contacto a continuación.</p>
+        <form>
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" style="width:100%; padding:10px; margin:5px 0;"><br>
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" style="width:100%; padding:10px; margin:5px 0;"><br>
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message" style="width:100%; padding:10px; margin:5px 0;"></textarea><br><br>
+            <input type="submit" value="Enviar" style="background-color:#00d1b2; color:#fff; border:none; padding:10px 20px; cursor:pointer;">
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Empresa de Pentesting. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
